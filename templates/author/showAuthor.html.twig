@@ -1,0 +1,8 @@
+<h1>Détails de l'Auteur</h1>
+    <p>ID de l'auteur : {{ authorId }}</p>
+        <p>username l'auteur : {{ author.username|upper }} </p>
+                                <img src="{{ asset(author.picture) }}" alt="user avatar" width="100px">
+
+                                {% for authorIds in authorId  %}
+    <p>{{ authorId.id }} a écrit {{ authorId.nb_books }} livres.</p>
+{% endfor %}
